@@ -1,0 +1,7 @@
+CREATE USER 'username'@'ipdamaquinaquevaiacessar' IDENTIFIED BY 'password';
+
+GRANT SUPER ON *.* TO 'username'@'ipdamaquinaquevaiacessar' IDENTIFIED BY 'password';
+
+GRANT ALL ON mysql.* to 'username'@'ipdamaquinaquevaiacessar' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
